@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+       
+       
+       <bean id="jionDate1" class="java.util.Date">
+       <property name="year" value="90"></property>
+       <property name="month" value="5"></property>    
+       </bean>
+          <bean id="jionDate2" class="java.util.Date">
+       <property name="year" value="78"></property>
+       <property name="month" value="9"></property>    
+       </bean>
+          <bean id="jionDate3" class="java.util.Date">
+       <property name="year" value="98"></property>
+       <property name="month" value="7"></property>    
+       </bean>
+          <bean id="stuDte1" class="java.util.Date">
+       <property name="year" value="57"></property>
+       <property name="month" value="6"></property>    
+       </bean>
+          <bean id="stuDte2" class="java.util.Date">
+       <property name="year" value="85"></property>
+       <property name="month" value="4"></property>    
+       </bean>
+       
+       <bean id="facultyDetails" class="com.SpringRealtime.CollectionInjection.FacultyDetails">
+       
+       <property name="facultyName">
+       
+       <list>
+       
+       <value>Raj Sir</value>
+       <value>SuRaj Sir</value>
+       <value>Ranjan Sir</value>
+       
+       </list>  
+       </property>
+       
+       <property name="joinDate">
+       
+       <list>
+       
+       <ref bean="jionDate1"/>
+       <ref bean="jionDate2"/>
+       <ref bean="jionDate3"/>
+       
+       </list>  
+       </property>
+       
+       </bean>
+       
+       <bean id="studentDetails" class="com.SpringRealtime.CollectionInjection.StudentDetails">
+       
+       <constructor-arg>
+       
+       <set>
+       <value>2453435566</value>
+       <value>6453673543</value> 
+       </set>
+       
+       </constructor-arg>
+       <constructor-arg>
+       <set>
+       <ref bean="stuDte1"/>
+       <ref bean="stuDte2"/>
+       </set>
+       
+       </constructor-arg>
+        
+       </bean>
+       
+       <bean id="empDetails" class="com.SpringRealtime.CollectionInjection.EmployeeDetails">
+       
+       <property name="empInfo">
+       
+       <map>
+       <entry>
+       <key><value>1826</value></key>
+       <value>Mrinmoy</value>
+       </entry>
+       <entry key="2345" value="Aman"></entry>
+       </map>
+       
+       
+       </property>
+       <property name="empReg">
+       <map>
+       <entry>
+       <key><value>Bivas</value></key>
+       <ref bean="jionDate2"/>
+       </entry>
+       
+       <entry key="Chandan" value-ref="jionDate3"></entry>
+       </map>
+       
+       </property>
+       
+       </bean>
+
+</beans>

@@ -2,21 +2,12 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-<<<<<<< HEAD
-  <groupId>com.JavaSpring</groupId>
-  <artifactId>AutoWiredAnnotation</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
-  <packaging>jar</packaging>
-
-  <name>AutoWiredAnnotation</name>
-=======
   <groupId>com.SpringRealtime</groupId>
   <artifactId>CollectionInjection</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>jar</packaging>
 
   <name>CollectionInjection</name>
->>>>>>> 54e98db (Collection Injection)
   <url>http://maven.apache.org</url>
 
   <properties>
@@ -24,19 +15,11 @@
   </properties>
 
   <dependencies>
-<<<<<<< HEAD
-	<!-- https://mvnrepository.com/artifact/org.springframework/spring-context-support -->
-<dependency>
-    <groupId>org.springframework</groupId>
-    <artifactId>spring-context-support</artifactId>
-    <version>5.3.1</version>
-=======
    	  <!-- https://mvnrepository.com/artifact/org.springframework/spring-context -->
 <dependency>
     <groupId>org.springframework</groupId>
     <artifactId>spring-context</artifactId>
     <version>6.1.4</version>   
->>>>>>> 54e98db (Collection Injection)
 </dependency>
   </dependencies>
 </project>
